@@ -1,0 +1,35 @@
+services:
+  db:
+    image: postgres:17.5-bookworm
+    environment:
+      POSTGRES_USER: memjar
+      POSTGRES_PASSWORD: secret123
+      POSTGRES_DB: memjardb
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "memjar", "-d", "memjardb" ]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_URLS: "http://+:80"
+      ConnectionStrings__DefaultConnection: "Host=db;Database=memjardb;Username=memjar;Password=secret123"
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "5001:80"
+    command: >
+      bash -c "dotnet ef database update --no-build &&
+               dotnet MemoryJar.API.dll"
+
+volumes:
+  db_data:
