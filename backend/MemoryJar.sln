@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryJar.Data", "MemoryJar.Data\MemoryJar.Data.csproj", "{E4C9244F-2CD8-4B50-8140-94F4F6C843C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryJar.Business", "MemoryJar.Business\MemoryJar.Business.csproj", "{8814B8B8-E9FD-408E-B253-C1A4088C4FFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MemoryJar.API", "MemoryJar.API\MemoryJar.API.csproj", "{0241E4E7-047F-4A87-A9D3-0D7D270C4F95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4C9244F-2CD8-4B50-8140-94F4F6C843C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4C9244F-2CD8-4B50-8140-94F4F6C843C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4C9244F-2CD8-4B50-8140-94F4F6C843C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4C9244F-2CD8-4B50-8140-94F4F6C843C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8814B8B8-E9FD-408E-B253-C1A4088C4FFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8814B8B8-E9FD-408E-B253-C1A4088C4FFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8814B8B8-E9FD-408E-B253-C1A4088C4FFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8814B8B8-E9FD-408E-B253-C1A4088C4FFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0241E4E7-047F-4A87-A9D3-0D7D270C4F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0241E4E7-047F-4A87-A9D3-0D7D270C4F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0241E4E7-047F-4A87-A9D3-0D7D270C4F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0241E4E7-047F-4A87-A9D3-0D7D270C4F95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
